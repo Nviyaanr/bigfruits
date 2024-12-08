@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big Fruits Game</title>
+    <meta property="og:title" content="Big Fruits Game" />
+    <meta
+      property="og:image"
+      content="https://tombofry.github.io/suika-game/screenshot.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="game-canvas">
+        <div id="game-ui">
+          <p id="game-score"></p>
+
+          <div id="game-end-container">
+            <div id="game-end">
+              <div id="game-end-title">Game Over!</div>
+              <a id="game-end-link" href="">Try Again</a>
+            </div>
+          </div>
+
+          <div id="game-status">
+            <div class="game-status-item">
+              <div class="game-status-label">Highscore</div>
+              <div id="game-highscore-value">0</div>
+            </div>
+            <div class="game-status-item">
+              <div class="game-status-label">Next</div>
+              <img id="game-next-fruit" src="./assets/img/circle0.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="game-canvas">
+      <button id="start-game">Start</button>
+      <div id="game-ui">
+        <p id="game-score"></p>
+
+        <div id="game-end-container">
+          <div id="game-end">
+            <div id="game-end-title">Game Over!</div>
+            <a id="game-end-link" href="">Try Again</a>
+          </div>
+        </div>
+
+        <div id="game-status">
+          <div class="game-status-item">
+            <div class="game-status-label">Highscore</div>
+            <div id="game-highscore-value">0</div>
+          </div>
+          <div class="game-status-item">
+            <div class="game-status-label">Next</div>
+            <img id="game-next-fruit" src="./assets/img/circle0.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pop-up Iklan -->
+    <div id="ad-popup" class="popup">
+      <div class="popup-content">
+        <a href="https://www.gojek.com/en-id"
+          ><img src="./assets/img/iklan.jpg" alt="Advertisement"
+        /></a>
+        <button id="close-popup">Tutup</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./matter.js"></script>
+    <script type="text/javascript" src="./index.js?v=4"></script>
+  </body>
+</html>
